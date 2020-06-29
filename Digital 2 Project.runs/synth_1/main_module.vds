@@ -1,0 +1,391 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Thu May 16 07:42:39 2019
+# Process ID: 16504
+# Current directory: C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.runs/synth_1
+# Command line: vivado.exe -log main_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main_module.tcl
+# Log file: C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.runs/synth_1/main_module.vds
+# Journal file: C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main_module.tcl -notrace
+Command: synth_design -top main_module -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17332 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 283.633 ; gain = 73.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main_module' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:23]
+	Parameter G_R bound to: 3'b000 
+	Parameter Y_R bound to: 3'b001 
+	Parameter R_G bound to: 3'b010 
+	Parameter R_Y bound to: 3'b011 
+	Parameter walk_state bound to: 3'b100 
+INFO: [Synth 8-638] synthesizing module 'clkDivider' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/clkDivider.v:23]
+	Parameter n bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkDivider' (1#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/clkDivider.v:23]
+INFO: [Synth 8-638] synthesizing module 'clkDivider__parameterized0' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/clkDivider.v:23]
+	Parameter n bound to: 250000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkDivider__parameterized0' (1#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/clkDivider.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/timeCounter.v:23]
+	Parameter n bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/timeCounter.v:23]
+INFO: [Synth 8-638] synthesizing module 'decoder2x4' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/decoder2x4.v:23]
+INFO: [Synth 8-256] done synthesizing module 'decoder2x4' (3#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/decoder2x4.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'en' does not match port width (2) of module 'decoder2x4' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:52]
+INFO: [Synth 8-638] synthesizing module 'mux4x1' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/mux4x1.v:23]
+WARNING: [Synth 8-567] referenced signal 'seg1' should be on the sensitivity list [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/mux4x1.v:30]
+WARNING: [Synth 8-567] referenced signal 'seg2' should be on the sensitivity list [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/mux4x1.v:30]
+WARNING: [Synth 8-567] referenced signal 'seg3' should be on the sensitivity list [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/mux4x1.v:30]
+WARNING: [Synth 8-567] referenced signal 'seg4' should be on the sensitivity list [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/mux4x1.v:30]
+INFO: [Synth 8-256] done synthesizing module 'mux4x1' (4#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/mux4x1.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'en' does not match port width (2) of module 'mux4x1' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:53]
+INFO: [Synth 8-638] synthesizing module 'signToSeg' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/signToSeg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'signToSeg' (5#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/signToSeg.v:23]
+INFO: [Synth 8-638] synthesizing module 'hexToSeg' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/hexToSeg.v:23]
+INFO: [Synth 8-256] done synthesizing module 'hexToSeg' (6#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/hexToSeg.v:23]
+WARNING: [Synth 8-689] width (5) of port connection 'x' does not match port width (4) of module 'hexToSeg' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:56]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:146]
+WARNING: [Synth 8-5788] Register activate_walk_reg in module main_module is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:71]
+INFO: [Synth 8-256] done synthesizing module 'main_module' (7#1) [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 321.066 ; gain = 110.695
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 321.066 ; gain = 110.695
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/constrs_1/new/test_cf.xdc]
+Finished Parsing XDC File [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/constrs_1/new/test_cf.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/constrs_1/new/test_cf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/main_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 613.184 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "divided_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "divided_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'walkSign_reg' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:57]
+WARNING: [Synth 8-327] inferring latch for variable 'sideSign_reg' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:55]
+WARNING: [Synth 8-327] inferring latch for variable 'mainSign_reg' [C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.srcs/sources_1/new/main_module.v:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 4     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module main_module 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clkDivider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module decoder2x4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module mux4x1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+Module signToSeg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      7 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk1HzModule/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1HzModule/divided_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk200HzModule/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk200HzModule/divided_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1HzModule/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk1HzModule/divided_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk200HzModule/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clk200HzModule/divided_clk" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'walkSign_reg[1]' (LD) to 'walkSign_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (segEnCounterModule/digit_reg[3]) is unused and will be removed from module main_module.
+WARNING: [Synth 8-3332] Sequential element (segEnCounterModule/digit_reg[2]) is unused and will be removed from module main_module.
+WARNING: [Synth 8-3332] Sequential element (sec_counter_reg[4]) is unused and will be removed from module main_module.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |    67|
+|4     |LUT2   |    12|
+|5     |LUT3   |     3|
+|6     |LUT4   |     9|
+|7     |LUT5   |    73|
+|8     |LUT6   |    22|
+|9     |FDCE   |    71|
+|10    |FDPE   |     4|
+|11    |FDRE   |     1|
+|12    |LD     |     5|
+|13    |IBUF   |     4|
+|14    |OBUF   |    11|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------+---------------------------+------+
+|      |Instance             |Module                     |Cells |
++------+---------------------+---------------------------+------+
+|1     |top                  |                           |   299|
+|2     |  clk1HzModule       |clkDivider                 |   113|
+|3     |  clk200HzModule     |clkDivider__parameterized0 |   113|
+|4     |  segEnCounterModule |counter                    |    24|
++------+---------------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 613.184 ; gain = 110.695
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 613.184 ; gain = 402.813
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LD => LDCE: 5 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 613.184 ; gain = 402.813
+INFO: [Common 17-1381] The checkpoint 'C:/Users/muhammad_osama/Downloads/Downloads/finalProject/digital 2 project/digital 2 project.runs/synth_1/main_module.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 613.184 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu May 16 07:43:01 2019...
